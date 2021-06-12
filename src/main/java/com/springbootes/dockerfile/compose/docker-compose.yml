@@ -1,0 +1,11 @@
+version: 3
+services:
+  nginx:
+    networks:
+      hello
+  nginx02:
+    networks:
+      hello
+
+networks:
+  hello #创建上面服务用到的网桥,默认创建就是bridge
